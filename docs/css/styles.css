@@ -1,0 +1,200 @@
+/* This stylesheet is where to add styles for your Shakespeare Play */
+/*We usually add something general for the body*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: black;
+  /*your style rules go in here */
+}
+
+h1,
+h2 {
+  color: white;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif ;
+}
+
+main {
+  /* background-color: red; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 70%;
+  margin: 0 auto;
+}
+
+figure {
+  width: 400px;
+  flex-basis: 300px;
+  flex-grow: 0;
+
+}
+
+img {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.info {
+  background-color: black;
+  color: antiquewhite;
+  padding: 2em;
+  flex-basis: 300px;
+  flex-grow: 1;
+  font-family: 'Times New Roman', Times, serif;
+}
+.synopsis {
+  background-color: black;
+  color: oldlace;
+  padding: 2em;
+  flex-basis: 300px;
+  flex-grow: 1;
+}
+
+section {
+  border: 0;
+}
+
+p {
+  margin-top: 2em;
+  margin-left: 5em;
+  margin-right: 5em;
+  margin-bottom: 2em;
+}
+
+.playlink {
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: firebrick;
+  
+}
+.playlink a {
+  color: white;
+  color: firebrick;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+
+/*Here follows the class names that you will have in your html*/
+/*You may have more if you added styles in InDesign*/
+/*You need to add the style attributes between the curly brackets*/
+
+/* the following may not be used but it doesn't matter if they are listed here  */
+
+section.cover {
+  text-align: center;
+  width: 70%;
+  margin: 20px auto;
+}
+
+img.playimage {
+  /* you will need a width attribute in here */
+  max-width: 40%;
+  padding: 20px;
+}
+
+img.shakespeareimage {
+  /* you will need a width attribute in here */
+  max-width: 40%;
+  padding: 20px;
+}
+
+/* If you have created any new stlyes in InDesign and used export tags then you need to add them here */
+
+section.dramatis {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+section.play {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+div.sceneImage {
+}
+h1.act {
+  font-family: fantasy;
+}
+p.character {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+p.charactername {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+h1.dramatishead {
+  font-family: fantasy;
+}
+h2.firstscene {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+h2.location {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+p.play_location {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+p.prose {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+h2.scene {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+p.song {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+h2.stagedirection {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+p.verseline {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+span.character_role {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+span.stage_directions_inline {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+span.character_beforespeech {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+  .info {
+    font-size: 0.8em;
+  }
+
+  figure {
+    /* width: 90%; */
+    flex-grow: 1;
+  }
+
+  img {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  main {
+    width: 100%;
+  }
+}
