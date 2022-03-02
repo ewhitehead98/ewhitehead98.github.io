@@ -1,0 +1,254 @@
+/* This stylesheet is where to add styles for your Shakespeare Play */
+/*We usually add something general for the body*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+scroll-behavior: smooth;
+scroll-padding-top: 63px;
+
+}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: oldlace;
+}
+
+section.nav {
+  /* this is where your nav list items will be */
+}
+
+section {
+  border: 0;
+}
+
+/*Here follows the class names that you will have in your html*/
+/*You may have more if you added styles in InDesign*/
+/*You need to add the style attributes between the curly brackets*/
+
+/* the following may not be used but it doesn't matter if they are listed here  */
+
+/* If you ahe created any new styles in InDesign and used export tags then you need to add them here */
+
+.dramatis,
+.play {
+  background-color: white;
+  padding: 1em;
+  width: 65%;
+  margin: 3em auto;
+}
+
+
+h1.act {
+  font-family: fantasy;
+  color: brown;
+  background-color: black;
+  text-align: center;
+  padding: 8px;
+  font-size: 2em;
+}
+p.character {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1em;
+  font-style: italic;
+}
+p.charactername {
+  font-family: fantasy;
+  font-size: 1em;
+  padding-left: 3px;
+}
+h1.dramatishead {
+  font-family: fantasy;
+  color: brown;
+  background-color: black;
+  text-align: center;
+  padding: 8px;
+  font-size: 2em;
+}
+
+h2.location {
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  font-size: 1.2em;
+  margin-top: 0.5em;
+  font-style: italic;
+}
+p.play_location {
+}
+p.prose {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1em;
+}
+
+h2.firstscene {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2em;
+  text-align: center;
+  margin-top: 0.5em;
+  background-color: brown;
+  color: black;
+}
+
+h2.scene {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2em;
+  text-align: center;
+  margin-top: 0.5em;
+  background-color: brown;
+  color: black;
+}
+p.song {
+  font-family: "Times New Roman", Times, serif;
+  font-size: medium;
+}
+h2.stagedirection {
+  font-family: "Times New Roman", Times, serif;
+  font-size: medium;
+  font-weight: bold;
+  margin-bottom: 1.5em;
+  margin-top: 1.5em;
+}
+.verseline {
+  margin: 0 0 0.4em 8em;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1em;
+}
+
+img {
+  display: block;
+  margin: 1em auto;
+  width: 100%;
+}
+
+p.prose {
+  margin: 0 0 0.4em 8em;
+  font-family: "Times New Roman", Times, serif;
+  font-size: medium;
+}
+
+span.character_role {
+  font-family: "Times New Roman", Times, serif;
+  font-size: medium;
+  color: brown;
+}
+span.stage_directions_inline {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-size: medium;
+}
+
+.character_beforespeech {
+  display: block;
+  position: relative;
+  left: -6em;
+  top: 1em;
+  /* font-size: 1.1em; */
+  width: 4em;
+  padding-left: 4px;
+}
+
+.hamburger {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+}
+
+body {
+  font-family: verdana, sans-serif;
+  margin: 2em;
+  padding: 0;
+}
+
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: black;
+  margin: 0 auto;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  color: white;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+nav ul li {
+  flex: 0 0 8rem; /*the same as flex-grow, flex-shrink, flex-basis */
+  text-align: center;
+}
+
+nav ul li a {
+  text-decoration: none;
+  padding: 0.8rem 1rem;
+  display: block;
+}
+
+nav ul li:hover {
+  background-color: brown;
+}
+nav ul li a:hover {
+  color: white;
+}
+
+li ul {
+  display: none;
+  position: absolute;
+  background-color: brown;
+}
+
+nav ul li:hover ul {
+  display: flex;
+  flex-direction: column;
+}
+
+nav ul li ul li {
+  flex: 0 1 auto;
+  width: 8rem; /* the same as the value for flex-basis on the parent li */
+}
+
+@media screen and (max-width: 700px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+  }
+
+  .hamburger {
+    display: block;
+    float: right;
+    cursor: pointer;
+  }
+  /* html {
+    scroll-padding-top: 275px;
+  } */
+  /*   ~ the tilda points to the next sibling selector */
+
+  input[type="checkbox"]:checked ~ ul {
+    display: block;
+  }
+
+  html {
+    scroll-padding-top: 275px;
+  }
+
+  li ul {
+    position: static;
+  }
+  nav ul li {
+    flex: 0 0 auto; /*the same as flex-grow, flex-shrink, flex-basis */
+    width: 100%;
+  }
+}
